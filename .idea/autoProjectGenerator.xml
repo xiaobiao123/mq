@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PluginProjectConfig">
+    <option name="path">
+      <array>
+        <option value="$PROJECT_DIR$/src/main/java/" />
+        <option value="$PROJECT_DIR$/src/main/java/" />
+        <option value="$PROJECT_DIR$/src/main/java/" />
+        <option value="$PROJECT_DIR$/src/main/java/" />
+      </array>
+    </option>
+    <option name="managerUseBO" value="false" />
+    <option name="daoUseSequence" value="false" />
+    <option name="pagerQuery" value="false" />
+    <option name="sql" value="CREATE TABLE &quot;ypt_notice&quot; (&#10;  &quot;id&quot; bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',&#10;  &quot;parent_no&quot; varchar(30) DEFAULT '0' COMMENT '父类notice_no用于回复',&#10;  &quot;notice_no&quot; varchar(30) DEFAULT NULL COMMENT '公告编号',&#10;  &quot;title&quot; varchar(128) DEFAULT NULL COMMENT '公告标题',&#10;  &quot;info&quot; varchar(500) DEFAULT NULL COMMENT ' 公告详情',&#10;  &quot;targetName&quot; varchar(200) DEFAULT NULL,&#10;  &quot;target&quot; enum('user','enterprise_type','enterprise','all') DEFAULT NULL COMMENT '''1:user:用户'',''2:enterprise_type企业类型'',''3:enterprise:企业'',''4:all:所有''',&#10;  &quot;status&quot; enum('cancel','used','show','overdue') DEFAULT NULL COMMENT '''1:cancel 作废'',''2:used使用中'',''3:overdue过期''',&#10;  &quot;type&quot; enum('announcement','feedback','mail') DEFAULT NULL COMMENT '''1:announcement'',''2:feedback'',''3:mail''',&#10;  &quot;begin_time&quot; varchar(19) DEFAULT NULL COMMENT '开始时间',&#10;  &quot;end_time&quot; varchar(19) DEFAULT NULL COMMENT '结束时间',&#10;  &quot;deleted&quot; varchar(4) DEFAULT '0' COMMENT '删除标志，0是未删除，1是删除',&#10;  &quot;create_no&quot; varchar(30) DEFAULT NULL COMMENT '创建人编号',&#10;  &quot;create_time&quot; varchar(19) DEFAULT NULL COMMENT '创建时间',&#10;  &quot;modify_no&quot; varchar(30) DEFAULT NULL COMMENT '修改人编号',&#10;  &quot;modify_time&quot; varchar(19) DEFAULT NULL COMMENT '修改时间',&#10;  &quot;app_code&quot; varchar(32) DEFAULT 'YPT' COMMENT '信息来源系统',&#10;  PRIMARY KEY (&quot;id&quot;)&#10;) ENGINE=InnoDB AUTO_INCREMENT=1000019 DEFAULT CHARSET=utf8mb4 COMMENT='系统公告表';&#10;&#10;" />
+  </component>
+</project>

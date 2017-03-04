@@ -21,6 +21,13 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 
 /**
+ * http://rsdl.zjrc.com/bszn/486.jhtml
+ * ActiveMQ 即时通讯服务 浅析 http://www.cnblogs.com/hoojo/p/active_mq_jms_apache_activeMQ.html
+ *
+ * http://zhglhy.iteye.com/blog/2202198
+ *
+ * Spring整合JMS(一)——基于ActiveMQ实现 http://elim.iteye.com/blog/1893038
+ *
  * <b>function:</b> 消息发送者
  *
  * @author hoojo
